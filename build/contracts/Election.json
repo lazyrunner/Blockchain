@@ -60,7 +60,7 @@
   "sourceMap": "36:686:0:-;;;372:105;8:9:-1;5:2;;;30:1;27;20:12;5:2;372:105:0;404:27;;;;;;;;;;;;;;;;;;:12;;;:27;;:::i;:::-;442;;;;;;;;;;;;;;;;;;:12;;;:27;;:::i;:::-;36:686;;554:165;617:15;;:17;;;;;;;;;;;;;675:36;;;;;;;;685:15;;675:36;;;;702:5;675:36;;;;709:1;675:36;;;645:10;:27;656:15;;645:27;;;;;;;;;;;:66;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;554:165;:::o;36:686::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
   "deployedSourceMap": "36:686:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;36:686:0;;;;;;;;;;;;;;;;;;;;;;;;336:27;;;:::i;:::-;;;;;;;;;;;;;;;;;;;254:44;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;254:44:0;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;254:44:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;336:27;;;;:::o;254:44::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
   "source": "pragma solidity >=0.4.22 <0.8.0;\r\n\r\ncontract Election {\r\n    //Model a Candidate\r\n    struct Candidate {\r\n        uint id;\r\n        string name;\r\n        uint voteCount;\r\n    }\r\n\r\n    //Store Candidate\r\n    //mapping is like associative array(hash)\r\n    mapping(uint => Candidate) public candidates;\r\n\r\n    //Store Candidate Count\r\n    uint public candidatesCount;\r\n\r\n    constructor() public {\r\n        addCandidate(\"Candidate 1\");\r\n        addCandidate(\"Candidate 2\");\r\n    }\r\n\r\n    //Adding a candidate\r\n    //private so only contract can access\r\n    function addCandidate (string memory _name) private {\r\n        candidatesCount++;\r\n        candidates[candidatesCount] = Candidate(candidatesCount, _name, 0);\r\n    }\r\n}",
-  "sourcePath": "C:\\Users\\Joshua\\Documents\\projectcode\\Blockchain\\contracts\\Election.sol",
+  "sourcePath": "C:\\Users\\joshfernandes\\Documents\\Project-code\\Blockchain\\contracts\\Election.sol",
   "ast": {
     "absolutePath": "project:/contracts/Election.sol",
     "exportedSymbols": {
@@ -1330,12 +1330,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xAF0b1F65D566DB115e175D907d65Cedc520A3EaC",
-      "transactionHash": "0x811a6b444e837adc3f82c3d47bee38fe4c70ecaadd38c4a5f645ee952dd7f1e2"
+      "address": "0x1f374926D48C99bcdE064E96e315b8716AE56851",
+      "transactionHash": "0x096699c8a881efb8367aede6528013c360b78081e74a6077ceea52313ab46a85"
     }
   },
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-08-22T12:56:30.401Z",
+  "updatedAt": "2021-08-23T11:14:41.883Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}
