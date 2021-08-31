@@ -40,6 +40,15 @@ candidate
 candidate[0].toNumber()
 ```
 
+Get accounts 
+```
+web3.eth.getAccounts().then(e => console.log(e));
+```
+
+Cast vote from an account
+```
+app.vote(1,{from: '0xA1306570F789c1777DA72501CeAc94DEEAF8aB61'})
+```
 
 ## Start server
 start the application server
